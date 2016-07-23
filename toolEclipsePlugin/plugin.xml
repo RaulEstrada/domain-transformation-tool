@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            objectClass="org.eclipse.jdt.core.IPackageFragment"
+            id="toolEclipsePlugin.contribution1">
+         <menu
+               label="Annotation Processing Tool"
+               path="additions"
+               id="toolEclipsePlugin.menu1">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         <action
+               label="Load from java"
+               class="tooleclipseplugin.popup.actions.LoadFromJavaAction"
+               menubarPath="toolEclipsePlugin.menu1/group1"
+               enablesFor="1"
+               id="toolEclipsePlugin.fromJava">
+         </action>
+         <action
+               label="Generate ORM"
+               class="tooleclipseplugin.popup.actions.GenerateORMAction"
+               menubarPath="toolEclipsePlugin.menu1/group1"
+               enablesFor="1"
+               id="toolEclipsePlugin.toORM">
+               <enablement>
+               	<and>
+               		<objectClass name="tooleclipseplugin.Core"/>
+   					<objectState name="intermediateModelLoaded" value="true"/>
+               	</and>
+               </enablement>
+         </action>
+         <action
+               label="Generate java"
+               class="tooleclipseplugin.popup.actions.GenerateJavaAction"
+               menubarPath="toolEclipsePlugin.menu1/group1"
+               enablesFor="1"
+               id="toolEclipsePlugin.toJava">
+               <enablement>
+               	<and>
+               		<objectClass name="tooleclipseplugin.Core"/>
+   					<objectState name="intermediateModelLoaded" value="true"/>
+               	</and>
+               </enablement>
+         </action>
+         <action
+               label="Generate UML"
+               class="tooleclipseplugin.popup.actions.GenerateUMLAction"
+               menubarPath="toolEclipsePlugin.menu1/group1"
+               enablesFor="1"
+               id="toolEclipsePlugin.toUML">
+               <enablement>
+               	<and>
+               		<objectClass name="tooleclipseplugin.Core"/>
+   					<objectState name="intermediateModelLoaded" value="true"/>
+               	</and>
+               </enablement>
+         </action>
+         <action
+               label="Generate MySQL script"
+               class="tooleclipseplugin.popup.actions.GenerateMySQLScriptAction"
+               menubarPath="toolEclipsePlugin.menu1/group1"
+               enablesFor="1"
+               id="toolEclipsePlugin.toMySQL">
+               <enablement>
+               	<and>
+               		<objectClass name="tooleclipseplugin.Core"/>
+   					<objectState name="intermediateModelLoaded" value="true"/>
+               	</and>
+               </enablement>
+         </action>
+         <action
+               label="Generate Oracle script"
+               class="tooleclipseplugin.popup.actions.GenerateOracleScriptAction"
+               menubarPath="toolEclipsePlugin.menu1/group1"
+               enablesFor="1"
+               id="toolEclipsePlugin.toOracle">
+               <enablement>
+               	<and>
+               		<objectClass name="tooleclipseplugin.Core"/>
+   					<objectState name="intermediateModelLoaded" value="true"/>
+               	</and>
+               </enablement>
+         </action>
+         <action
+               label="Generate HSQLDB script"
+               class="tooleclipseplugin.popup.actions.GenerateHSQLDBScriptAction"
+               menubarPath="toolEclipsePlugin.menu1/group1"
+               enablesFor="1"
+               id="toolEclipsePlugin.toHSQL">
+               <enablement>
+               	<and>
+               		<objectClass name="tooleclipseplugin.Core"/>
+   					<objectState name="intermediateModelLoaded" value="true"/>
+               	</and>
+               </enablement>
+         </action>
+         <action
+               label="Generate PostgreSQL script"
+               class="tooleclipseplugin.popup.actions.GeneratePostgreSQLScriptAction"
+               menubarPath="toolEclipsePlugin.menu1/group1"
+               enablesFor="1"
+               id="toolEclipsePlugin.toPostgreSQL">
+               <enablement>
+               	<and>
+               		<objectClass name="tooleclipseplugin.Core"/>
+   					<objectState name="intermediateModelLoaded" value="true"/>
+               	</and>
+               </enablement>
+         </action>
+      </objectContribution>
+      <objectContribution
+            id="toolEclipsePlugin.contribution1"
+            objectClass="org.eclipse.core.resources.IFolder">
+         <menu
+               id="toolEclipsePlugin.menu1"
+               label="Annotation Processing Tool"
+               path="additions">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         <action
+               class="tooleclipseplugin.popup.actions.LoadFromClassAction"
+               enablesFor="1"
+               id="toolEclipsePlugin.fromClass"
+               label="Load from class"
+               menubarPath="toolEclipsePlugin.menu1/group1">
+         </action>
+         <action
+               label="Generate ORM"
+               class="tooleclipseplugin.popup.actions.GenerateORMAction"
+               menubarPath="toolEclipsePlugin.menu1/group1"
+               enablesFor="1"
+               id="toolEclipsePlugin.toORM">
+               <enablement>
+               	<and>
+               		<objectClass name="tooleclipseplugin.Core"/>
+   					<objectState name="intermediateModelLoaded" value="true"/>
+               	</and>
+               </enablement>
+         </action>
+         <action
+               label="Generate java"
+               class="tooleclipseplugin.popup.actions.GenerateJavaAction"
+               menubarPath="toolEclipsePlugin.menu1/group1"
+               enablesFor="1"
+               id="toolEclipsePlugin.toJava">
+               <enablement>
+               	<and>
+               		<objectClass name="tooleclipseplugin.Core"/>
+   					<objectState name="intermediateModelLoaded" value="true"/>
+               	</and>
+               </enablement>
+         </action>
+         <action
+               label="Generate UML"
+               class="tooleclipseplugin.popup.actions.GenerateUMLAction"
+               menubarPath="toolEclipsePlugin.menu1/group1"
+               enablesFor="1"
+               id="toolEclipsePlugin.toUML">
+               <enablement>
+               	<and>
+               		<objectClass name="tooleclipseplugin.Core"/>
+   					<objectState name="intermediateModelLoaded" value="true"/>
+               	</and>
+               </enablement>
+         </action>
+         <action
+               label="Generate MySQL script"
+               class="tooleclipseplugin.popup.actions.GenerateMySQLScriptAction"
+               menubarPath="toolEclipsePlugin.menu1/group1"
+               enablesFor="1"
+               id="toolEclipsePlugin.toMySQL">
+               <enablement>
+               	<and>
+               		<objectClass name="tooleclipseplugin.Core"/>
+   					<objectState name="intermediateModelLoaded" value="true"/>
+               	</and>
+               </enablement>
+         </action>
+         <action
+               label="Generate Oracle script"
+               class="tooleclipseplugin.popup.actions.GenerateOracleScriptAction"
+               menubarPath="toolEclipsePlugin.menu1/group1"
+               enablesFor="1"
+               id="toolEclipsePlugin.toOracle">
+               <enablement>
+               	<and>
+               		<objectClass name="tooleclipseplugin.Core"/>
+   					<objectState name="intermediateModelLoaded" value="true"/>
+               	</and>
+               </enablement>
+         </action>
+         <action
+               label="Generate HSQLDB script"
+               class="tooleclipseplugin.popup.actions.GenerateHSQLDBScriptAction"
+               menubarPath="toolEclipsePlugin.menu1/group1"
+               enablesFor="1"
+               id="toolEclipsePlugin.toHSQL">
+               <enablement>
+               	<and>
+               		<objectClass name="tooleclipseplugin.Core"/>
+   					<objectState name="intermediateModelLoaded" value="true"/>
+               	</and>
+               </enablement>
+         </action>
+         <action
+               label="Generate PostgreSQL script"
+               class="tooleclipseplugin.popup.actions.GeneratePostgreSQLScriptAction"
+               menubarPath="toolEclipsePlugin.menu1/group1"
+               enablesFor="1"
+               id="toolEclipsePlugin.toPostgreSQL">
+               <enablement>
+               	<and>
+               		<objectClass name="tooleclipseplugin.Core"/>
+   					<objectState name="intermediateModelLoaded" value="true"/>
+               	</and>
+               </enablement>
+         </action>
+      </objectContribution>
+      <objectContribution
+            id="toolEclipsePlugin.contribution1"
+            objectClass="org.eclipse.core.resources.IFile"
+            nameFilter="*.uml">
+         <menu
+               id="toolEclipsePlugin.menu1"
+               label="Annotation Processing Tool"
+               path="additions">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         <action
+               class="tooleclipseplugin.popup.actions.LoadFromUMLAction"
+               enablesFor="1"
+               id="toolEclipsePlugin.fromUML"
+               label="Load from uml"
+               menubarPath="toolEclipsePlugin.menu1/group1">
+         </action>
+         <action
+               label="Generate ORM"
+               class="tooleclipseplugin.popup.actions.GenerateORMAction"
+               menubarPath="toolEclipsePlugin.menu1/group1"
+               enablesFor="1"
+               id="toolEclipsePlugin.toORM">
+               <enablement>
+               	<and>
+               		<objectClass name="tooleclipseplugin.Core"/>
+   					<objectState name="intermediateModelLoaded" value="true"/>
+               	</and>
+               </enablement>
+         </action>
+         <action
+               label="Generate java"
+               class="tooleclipseplugin.popup.actions.GenerateJavaAction"
+               menubarPath="toolEclipsePlugin.menu1/group1"
+               enablesFor="1"
+               id="toolEclipsePlugin.toJava">
+               <enablement>
+               	<and>
+               		<objectClass name="tooleclipseplugin.Core"/>
+   					<objectState name="intermediateModelLoaded" value="true"/>
+               	</and>
+               </enablement>
+         </action>
+         <action
+               label="Generate UML"
+               class="tooleclipseplugin.popup.actions.GenerateUMLAction"
+               menubarPath="toolEclipsePlugin.menu1/group1"
+               enablesFor="1"
+               id="toolEclipsePlugin.toUML">
+               <enablement>
+               	<and>
+               		<objectClass name="tooleclipseplugin.Core"/>
+   					<objectState name="intermediateModelLoaded" value="true"/>
+               	</and>
+               </enablement>
+         </action>
+         <action
+               label="Generate MySQL script"
+               class="tooleclipseplugin.popup.actions.GenerateMySQLScriptAction"
+               menubarPath="toolEclipsePlugin.menu1/group1"
+               enablesFor="1"
+               id="toolEclipsePlugin.toMySQL">
+               <enablement>
+               	<and>
+               		<objectClass name="tooleclipseplugin.Core"/>
+   					<objectState name="intermediateModelLoaded" value="true"/>
+               	</and>
+               </enablement>
+         </action>
+         <action
+               label="Generate Oracle script"
+               class="tooleclipseplugin.popup.actions.GenerateOracleScriptAction"
+               menubarPath="toolEclipsePlugin.menu1/group1"
+               enablesFor="1"
+               id="toolEclipsePlugin.toOracle">
+               <enablement>
+               	<and>
+               		<objectClass name="tooleclipseplugin.Core"/>
+   					<objectState name="intermediateModelLoaded" value="true"/>
+               	</and>
+               </enablement>
+         </action>
+         <action
+               label="Generate HSQLDB script"
+               class="tooleclipseplugin.popup.actions.GenerateHSQLDBScriptAction"
+               menubarPath="toolEclipsePlugin.menu1/group1"
+               enablesFor="1"
+               id="toolEclipsePlugin.toHSQL">
+               <enablement>
+               	<and>
+               		<objectClass name="tooleclipseplugin.Core"/>
+   					<objectState name="intermediateModelLoaded" value="true"/>
+               	</and>
+               </enablement>
+         </action>
+         <action
+               label="Generate PostgreSQL script"
+               class="tooleclipseplugin.popup.actions.GeneratePostgreSQLScriptAction"
+               menubarPath="toolEclipsePlugin.menu1/group1"
+               enablesFor="1"
+               id="toolEclipsePlugin.toPostgreSQL">
+               <enablement>
+               	<and>
+               		<objectClass name="tooleclipseplugin.Core"/>
+   					<objectState name="intermediateModelLoaded" value="true"/>
+               	</and>
+               </enablement>
+         </action>
+      </objectContribution>
+      <objectContribution
+            id="toolEclipsePlugin.contribution1"
+            objectClass="org.eclipse.core.resources.IFile"
+            nameFilter="*.tfg">
+         <menu
+               id="toolEclipsePlugin.menu1"
+               label="Annotation Processing Tool"
+               path="additions">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         <action
+               class="tooleclipseplugin.popup.actions.LoadFromDSLAction"
+               enablesFor="1"
+               id="toolEclipsePlugin.fromDSL"
+               label="Load from DSL"
+               menubarPath="toolEclipsePlugin.menu1/group1">
+         </action>
+         <action
+               label="Generate ORM"
+               class="tooleclipseplugin.popup.actions.GenerateORMAction"
+               menubarPath="toolEclipsePlugin.menu1/group1"
+               enablesFor="1"
+               id="toolEclipsePlugin.toORM">
+               <enablement>
+               	<and>
+               		<objectClass name="tooleclipseplugin.Core"/>
+   					<objectState name="intermediateModelLoaded" value="true"/>
+               	</and>
+               </enablement>
+         </action>
+         <action
+               label="Generate java"
+               class="tooleclipseplugin.popup.actions.GenerateJavaAction"
+               menubarPath="toolEclipsePlugin.menu1/group1"
+               enablesFor="1"
+               id="toolEclipsePlugin.toJava">
+               <enablement>
+               	<and>
+               		<objectClass name="tooleclipseplugin.Core"/>
+   					<objectState name="intermediateModelLoaded" value="true"/>
+               	</and>
+               </enablement>
+         </action>
+         <action
+               label="Generate UML"
+               class="tooleclipseplugin.popup.actions.GenerateUMLAction"
+               menubarPath="toolEclipsePlugin.menu1/group1"
+               enablesFor="1"
+               id="toolEclipsePlugin.toUML">
+               <enablement>
+               	<and>
+               		<objectClass name="tooleclipseplugin.Core"/>
+   					<objectState name="intermediateModelLoaded" value="true"/>
+               	</and>
+               </enablement>
+         </action>
+         <action
+               label="Generate MySQL script"
+               class="tooleclipseplugin.popup.actions.GenerateMySQLScriptAction"
+               menubarPath="toolEclipsePlugin.menu1/group1"
+               enablesFor="1"
+               id="toolEclipsePlugin.toMySQL">
+               <enablement>
+               	<and>
+               		<objectClass name="tooleclipseplugin.Core"/>
+   					<objectState name="intermediateModelLoaded" value="true"/>
+               	</and>
+               </enablement>
+         </action>
+         <action
+               label="Generate Oracle script"
+               class="tooleclipseplugin.popup.actions.GenerateOracleScriptAction"
+               menubarPath="toolEclipsePlugin.menu1/group1"
+               enablesFor="1"
+               id="toolEclipsePlugin.toOracle">
+               <enablement>
+               	<and>
+               		<objectClass name="tooleclipseplugin.Core"/>
+   					<objectState name="intermediateModelLoaded" value="true"/>
+               	</and>
+               </enablement>
+         </action>
+         <action
+               label="Generate HSQLDB script"
+               class="tooleclipseplugin.popup.actions.GenerateHSQLDBScriptAction"
+               menubarPath="toolEclipsePlugin.menu1/group1"
+               enablesFor="1"
+               id="toolEclipsePlugin.toHSQL">
+               <enablement>
+               	<and>
+               		<objectClass name="tooleclipseplugin.Core"/>
+   					<objectState name="intermediateModelLoaded" value="true"/>
+               	</and>
+               </enablement>
+         </action>
+         <action
+               label="Generate PostgreSQL script"
+               class="tooleclipseplugin.popup.actions.GeneratePostgreSQLScriptAction"
+               menubarPath="toolEclipsePlugin.menu1/group1"
+               enablesFor="1"
+               id="toolEclipsePlugin.toPostgreSQL">
+               <enablement>
+               	<and>
+               		<objectClass name="tooleclipseplugin.Core"/>
+   					<objectState name="intermediateModelLoaded" value="true"/>
+               	</and>
+               </enablement>
+         </action>
+      </objectContribution>
+      <objectContribution
+            id="toolEclipsePlugin.contribution1"
+            objectClass="org.eclipse.core.resources.IProject"
+            adaptable="true">
+         <menu
+               id="toolEclipsePlugin.menu1"
+               label="Annotation Processing Tool"
+               path="additions">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         <action
+               label="Load from database"
+               class="tooleclipseplugin.popup.actions.LoadFromDatabaseAction"
+               menubarPath="toolEclipsePlugin.menu1/group1"
+               enablesFor="1"
+               id="toolEclipsePlugin.fromDatabase">
+         </action>
+         <action
+               label="Generate ORM"
+               class="tooleclipseplugin.popup.actions.GenerateORMAction"
+               menubarPath="toolEclipsePlugin.menu1/group1"
+               enablesFor="1"
+               id="toolEclipsePlugin.toORM">
+               <enablement>
+               	<and>
+               		<objectClass name="tooleclipseplugin.Core"/>
+   					<objectState name="intermediateModelLoaded" value="true"/>
+               	</and>
+               </enablement>
+         </action>
+         <action
+               label="Generate java"
+               class="tooleclipseplugin.popup.actions.GenerateJavaAction"
+               menubarPath="toolEclipsePlugin.menu1/group1"
+               enablesFor="1"
+               id="toolEclipsePlugin.toJava">
+               <enablement>
+               	<and>
+               		<objectClass name="tooleclipseplugin.Core"/>
+   					<objectState name="intermediateModelLoaded" value="true"/>
+               	</and>
+               </enablement>
+         </action>
+         <action
+               label="Generate UML"
+               class="tooleclipseplugin.popup.actions.GenerateUMLAction"
+               menubarPath="toolEclipsePlugin.menu1/group1"
+               enablesFor="1"
+               id="toolEclipsePlugin.toUML">
+               <enablement>
+               	<and>
+               		<objectClass name="tooleclipseplugin.Core"/>
+   					<objectState name="intermediateModelLoaded" value="true"/>
+               	</and>
+               </enablement>
+         </action>
+         <action
+               label="Generate MySQL script"
+               class="tooleclipseplugin.popup.actions.GenerateMySQLScriptAction"
+               menubarPath="toolEclipsePlugin.menu1/group1"
+               enablesFor="1"
+               id="toolEclipsePlugin.toMySQL">
+               <enablement>
+               	<and>
+               		<objectClass name="tooleclipseplugin.Core"/>
+   					<objectState name="intermediateModelLoaded" value="true"/>
+               	</and>
+               </enablement>
+         </action>
+         <action
+               label="Generate Oracle script"
+               class="tooleclipseplugin.popup.actions.GenerateOracleScriptAction"
+               menubarPath="toolEclipsePlugin.menu1/group1"
+               enablesFor="1"
+               id="toolEclipsePlugin.toOracle">
+               <enablement>
+               	<and>
+               		<objectClass name="tooleclipseplugin.Core"/>
+   					<objectState name="intermediateModelLoaded" value="true"/>
+               	</and>
+               </enablement>
+         </action>
+         <action
+               label="Generate HSQLDB script"
+               class="tooleclipseplugin.popup.actions.GenerateHSQLDBScriptAction"
+               menubarPath="toolEclipsePlugin.menu1/group1"
+               enablesFor="1"
+               id="toolEclipsePlugin.toHSQL">
+               <enablement>
+               	<and>
+               		<objectClass name="tooleclipseplugin.Core"/>
+   					<objectState name="intermediateModelLoaded" value="true"/>
+               	</and>
+               </enablement>
+         </action>
+         <action
+               label="Generate PostgreSQL script"
+               class="tooleclipseplugin.popup.actions.GeneratePostgreSQLScriptAction"
+               menubarPath="toolEclipsePlugin.menu1/group1"
+               enablesFor="1"
+               id="toolEclipsePlugin.toPostgreSQL">
+               <enablement>
+               	<and>
+               		<objectClass name="tooleclipseplugin.Core"/>
+   					<objectState name="intermediateModelLoaded" value="true"/>
+               	</and>
+               </enablement>
+         </action>
+      </objectContribution>
+   </extension>
+
+</plugin>

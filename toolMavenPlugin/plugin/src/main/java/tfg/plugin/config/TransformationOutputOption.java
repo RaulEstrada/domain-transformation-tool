@@ -1,0 +1,11 @@
+package tfg.plugin.config;
+
+public enum TransformationOutputOption {
+	TO_ORM_XML, 
+	TO_DATABASE_MYSQL_SCRIPT,
+	TO_DATABASE_ORACLE_SCRIPT,
+	TO_DATABASE_POSTGRESQL_SCRIPT,
+	TO_DATABASE_HSQLDB_SCRIPT,
+	TO_UML_MODEL,
+	TO_JAVA
+}

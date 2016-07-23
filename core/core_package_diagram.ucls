@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.9" icons="true" always-add-relationships="false" generalizations="false" 
+  realizations="false" associations="false" dependencies="false" nesting-relationships="false" router="FAN">  
+  <component id="1" language="java" name="src" project="core" file="/core/src" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="739" width="836" x="100" y="-1"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </component>  
+  <package id="2" language="java" name="input" project="core" file="/core/src/input" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="709" width="220" x="129" y="22"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="3" language="java" name="input.bbdd" project="core" file="/core/src/input/bbdd" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="126" width="181" x="143" y="81"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="4" language="java" name="input.classes" project="core" file="/core/src/input/classes" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="121" width="185" x="141" y="601"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="5" language="java" name="input.dsl" project="core" file="/core/src/input/dsl" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="55" width="183" x="140" y="476"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="6" language="java" name="input.java" project="core" file="/core/src/input/java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="55" width="183" x="141" y="538"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="7" language="java" name="input.uml" project="core" file="/core/src/input/uml" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="258" width="181" x="141" y="212"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="8" language="java" name="input.bbdd.utils" project="core" file="/core/src/input/bbdd/utils" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="235" y="163"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="9" language="java" name="input.uml.creators" project="core" file="/core/src/input/uml/creators" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="228" y="295"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="10" language="java" name="input.uml.exceptions" project="core" file="/core/src/input/uml/exceptions" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="231" y="355"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="11" language="java" name="input.uml.utils" project="core" file="/core/src/input/uml/utils" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="225" y="423"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="12" language="java" name="input.classes.analyzer" project="core" file="/core/src/input/classes/analyzer" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="234" y="684"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="13" language="java" name="model" project="core" file="/core/src/model" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="653" width="234" x="383" y="43"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="14" language="java" name="model.associations" project="core" file="/core/src/model/associations" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="490" y="131"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="15" language="java" name="model.customtypes" project="core" file="/core/src/model/customtypes" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="495" y="207"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="16" language="java" name="model.generators" project="core" file="/core/src/model/generators" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="495" y="282"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="17" language="java" name="model.inheritance" project="core" file="/core/src/model/inheritance" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="497" y="364"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="18" language="java" name="model.lifecycle" project="core" file="/core/src/model/lifecycle" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="498" y="461"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="19" language="java" name="model.queries" project="core" file="/core/src/model/queries" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="493" y="561"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="20" language="java" name="model.structure" project="core" file="/core/src/model/structure" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="498" y="653"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="21" language="java" name="output" project="core" file="/core/src/output" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="563" width="231" x="656" y="88"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="22" language="java" name="output.bbdd" project="core" file="/core/src/output/bbdd" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="200" width="200" x="667" y="144"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="23" language="java" name="output.bbdd.scripters" project="core" file="/core/src/output/bbdd/scripters" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="769" y="226"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="24" language="java" name="output.bbdd.utils" project="core" file="/core/src/output/bbdd/utils" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="774" y="294"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="25" language="java" name="output.java" project="core" file="/core/src/output/java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="71" width="195" x="669" y="358"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="26" language="java" name="output.orm" project="core" file="/core/src/output/orm" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="72" width="193" x="673" y="443"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="27" language="java" name="output.uml" project="core" file="/core/src/output/uml" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="68" width="196" x="674" y="534"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

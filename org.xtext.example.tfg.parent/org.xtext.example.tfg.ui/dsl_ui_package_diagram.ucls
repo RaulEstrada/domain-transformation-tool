@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.9" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <component id="1" language="java" name="src" project="org.xtext.example.tfg.ui" file="/org.xtext.example.tfg.ui/src" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="323" width="665" x="101" y="-11"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </component>  
+  <package id="2" language="java" name="org.xtext.example.tfg.ui" project="org.xtext.example.tfg.ui" 
+    file="/org.xtext.example.tfg.ui/src/org/xtext/example/tfg/ui" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="226" width="612" x="125" y="44"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="3" language="java" name="org.xtext.example.tfg.ui.contentassist" project="org.xtext.example.tfg.ui" 
+    file="/org.xtext.example.tfg.ui/src/org/xtext/example/tfg/ui/contentassist" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="291" y="135"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="4" language="java" name="org.xtext.example.tfg.ui.labeling" project="org.xtext.example.tfg.ui" 
+    file="/org.xtext.example.tfg.ui/src/org/xtext/example/tfg/ui/labeling" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="277" y="208"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="5" language="java" name="org.xtext.example.tfg.ui.outline" project="org.xtext.example.tfg.ui" 
+    file="/org.xtext.example.tfg.ui/src/org/xtext/example/tfg/ui/outline" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="575" y="138"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="6" language="java" name="org.xtext.example.tfg.ui.quickfix" project="org.xtext.example.tfg.ui" 
+    file="/org.xtext.example.tfg.ui/src/org/xtext/example/tfg/ui/quickfix" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="581" y="211"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

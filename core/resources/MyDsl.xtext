@@ -1,0 +1,40 @@
+grammar org.xtext.example.tfg.MyDsl with org.eclipse.xtext.xbase.Xbase
+
+generate myDsl "http://www.xtext.org/example/tfg/MyDsl"
+import "http://www.eclipse.org/xtext/xbase/Xbase"
+
+MODEL:
+	elements+=ELEMENT*
+;
+	
+ELEMENT:
+	ENTITY | VALUEOBJECT | ENUMERATION | LINK
+;
+	
+ENTITY: 'entity' (abstractEntity?='abstract')? name=ID ('extends' parent=[ENTITY])? '{'
+		entityElements+=ENTITYELEMENT*
+	'}';
+	
+ENTITYELEMENT: ANNOTATED_ATTRIBUTE | OPERATION;
+	
+VALUEOBJECT: 'value' name=ValidID '{'
+		valueattributes+=ATTRIBUTE*
+	'}';
+	
+ENUMERATION: 'enum' name=ValidID '{'
+		enumelements+=ID*
+	'}';
+	
+LINK: 'link' name=ID '{'
+		relations+=RELATIONSHIP*
+		attributes+=ATTRIBUTE*
+	'}';
+
+ANNOTATED_ATTRIBUTE: (annotation=('@Id' | '@Version'))? type=JvmTypeReference name=ID;
+
+ATTRIBUTE: type=JvmTypeReference name=ID; 
+	
+RELATIONSHIP: cardinal=('ZeroOne' | 'One' | 'Many' | 'OneMany') type=[ENTITY] name=ID;
+
+OPERATION: 'operation' return=JvmTypeReference name=ValidID '(' 
+    (params+=FullJvmFormalParameter (',' params+=FullJvmFormalParameter)*)? ')';

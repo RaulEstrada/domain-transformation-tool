@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/org.xtext.tfg.feature_1.0.0.201605291211.jar" id="org.xtext.tfg.feature" version="1.0.0.201605291211">
+      <category name="tfg-domain-tool"/>
+   </feature>
+   <category-def name="tfg-domain-tool" label="TFG Domain Tool"/>
+</site>

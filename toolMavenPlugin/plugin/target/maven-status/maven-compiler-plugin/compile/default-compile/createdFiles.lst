@@ -1,0 +1,9 @@
+tfg\plugin\utils\Utils.class
+tfg\plugin\config\DirectoryInput.class
+tfg\plugin\Tool.class
+tfg\plugin\config\DatabaseInput.class
+tfg\plugin\config\ToolConfig.class
+tfg\plugin\config\DatabaseInputType.class
+tfg\plugin\config\DirectoryInputType.class
+tfg\plugin\config\TransformationOutputOption.class
+tfg\plugin\utils\Utils$1.class

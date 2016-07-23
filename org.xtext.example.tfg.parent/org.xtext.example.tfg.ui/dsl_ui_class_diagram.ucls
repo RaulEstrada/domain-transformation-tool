@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.9" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="org.xtext.example.tfg.ui.MyDslUiModule" project="org.xtext.example.tfg.ui" 
+    file="/org.xtext.example.tfg.ui/xtend-gen/org/xtext/example/tfg/ui/MyDslUiModule.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="192" y="146"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <package id="2" language="java" name="org.xtext.example.tfg.ui.contentassist" project="org.xtext.example.tfg.ui" 
+    file="/org.xtext.example.tfg.ui/src/org/xtext/example/tfg/ui/contentassist" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="190" width="289" x="374" y="54"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <class id="3" language="java" name="org.xtext.example.tfg.ui.contentassist.MyDslProposalProvider" 
+    project="org.xtext.example.tfg.ui" 
+    file="/org.xtext.example.tfg.ui/xtend-gen/org/xtext/example/tfg/ui/contentassist/MyDslProposalProvider.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="511" y="173"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <package id="4" language="java" name="org.xtext.example.tfg.ui.labeling" project="org.xtext.example.tfg.ui" 
+    file="/org.xtext.example.tfg.ui/src/org/xtext/example/tfg/ui/labeling" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="352" width="383" x="689" y="39"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <class id="5" language="java" name="org.xtext.example.tfg.ui.labeling.MyDslDescriptionLabelProvider" 
+    project="org.xtext.example.tfg.ui" 
+    file="/org.xtext.example.tfg.ui/xtend-gen/org/xtext/example/tfg/ui/labeling/MyDslDescriptionLabelProvider.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="884" y="180"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="org.xtext.example.tfg.ui.labeling.MyDslLabelProvider" 
+    project="org.xtext.example.tfg.ui" 
+    file="/org.xtext.example.tfg.ui/xtend-gen/org/xtext/example/tfg/ui/labeling/MyDslLabelProvider.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="894" y="329"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <package id="7" language="java" name="org.xtext.example.tfg.ui.outline" project="org.xtext.example.tfg.ui" 
+    file="/org.xtext.example.tfg.ui/src/org/xtext/example/tfg/ui/outline" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="149" width="296" x="369" y="255"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <class id="8" language="java" name="org.xtext.example.tfg.ui.outline.MyDslOutlineTreeProvider" 
+    project="org.xtext.example.tfg.ui" 
+    file="/org.xtext.example.tfg.ui/xtend-gen/org/xtext/example/tfg/ui/outline/MyDslOutlineTreeProvider.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="531" y="354"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <package id="9" language="java" name="org.xtext.example.tfg.ui.quickfix" project="org.xtext.example.tfg.ui" 
+    file="/org.xtext.example.tfg.ui/src/org/xtext/example/tfg/ui/quickfix" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="161" width="270" x="63" y="248"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <class id="10" language="java" name="org.xtext.example.tfg.ui.quickfix.MyDslQuickfixProvider" 
+    project="org.xtext.example.tfg.ui" 
+    file="/org.xtext.example.tfg.ui/xtend-gen/org/xtext/example/tfg/ui/quickfix/MyDslQuickfixProvider.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="199" y="356"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
